@@ -7,14 +7,22 @@
 using namespace std;
 
 int main() {
-    int n,dp[1001];
+    int n,rect[1001];
     cin >> n;
-    dp[1] = 1;
-    dp[2] = 2;
+    rect[1] = 1;
+    rect[2] = 2;
     for (int i = 3; i <= n; i++) {
         // f(n) = f(n-1) + f(n-2)
-        dp[i] = (dp[i - 1] + dp[i - 2])%10007;
+        rect[i] = (rect[i - 1] + rect[i - 2])%10007;
     }
-    cout << dp[n] << '\n';
+    cout << rect[n] << '\n';
     return 0;
 }
+
+int main(){
+    for (int i = 0; i < 3; ++i) {
+
+    }
+
+}
+
