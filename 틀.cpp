@@ -1,5 +1,5 @@
 //
-// Created by sylve on 2021-02-20.
+// Created by sylve on 2021-03-02.
 //
 
 #include<iostream>
@@ -21,13 +21,13 @@ void solution()
 
 }
 
-int main(void)
+int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
 
-    input()
+    input();
     solution();
 
     return 0;
