@@ -36,7 +36,6 @@ void solution(int& size, int& n, vector<int>& vec)
             break;
         }
 
-
     if (isSame)
         std::cout << 0 << "\n";
     else {
