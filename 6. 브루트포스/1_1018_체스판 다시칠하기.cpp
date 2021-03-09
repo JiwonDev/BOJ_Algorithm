@@ -2,10 +2,6 @@
 // Created by sylve on 2021-03-02.
 //
 
-//
-// Created by sylve on 2021-03-02.
-//
-
 #include<iostream>
 #include<cstdio>
 #include<vector>
@@ -48,16 +44,16 @@ void solution(pair<int, int>& inputs, string (&board)[50])
             "WBWBWBWB"
     };
 
-    int tmp;
+    int temp;
     int min_val = 9999999;
 
     for(int i = 0; i + 8 <= inputs.first; i++)
     {
         for(int j = 0; j + 8 <= inputs.second; j++)
         {
-            tmp = min(getRedrawCount(i, j, board, WB), getRedrawCount(i, j, board, BW));
-            if(tmp < min_val)
-                min_val = tmp;
+            temp = min(getRedrawCount(i, j, board, WB), getRedrawCount(i, j, board, BW));
+            if(temp < min_val)
+                min_val = temp;
         }
     }
     cout << min_val;
@@ -71,8 +67,6 @@ int getRedrawCount(int x, int y, string* board, string* orginal)
         for(int j = 0; j < 8; j++)
             if(board[x+i][y+j] != orginal[i][j])
                 redrawCount++;
-
-
     return redrawCount;
 }
 

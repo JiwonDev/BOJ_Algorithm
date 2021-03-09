@@ -36,7 +36,6 @@ void solution(int& size, int& n, vector<int>& vec)
             break;
         }
 
-
     if (isSame)
         cout << 0 << "\n";//n이 집합에 포함되어있는경우
     else {
