@@ -38,10 +38,10 @@ void solution(int& size, int& n, vector<int>& vec)
 
 
     if (isSame)
-        std::cout << 0 << "\n";
+        cout << 0 << "\n";//n이 집합에 포함되어있는경우
     else {
         for (int i = 0; i < size; i++)
-            if (vec[i] > n) {
+            if (vec[i] > n) { // 범위지정
                 start = vec[i - 1];
                 end = vec[i];
                 break;
@@ -49,7 +49,7 @@ void solution(int& size, int& n, vector<int>& vec)
 
         int answer = 0;
 
-        for (int i = start + 1; i < end; i++)
+        for (int i = start + 1; i < end; i++) // 갯수 세기
             for (int j = i + 1; j < end; j++)
                 if (i <= n && n <= j)
                     answer++;
