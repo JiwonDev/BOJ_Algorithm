@@ -22,7 +22,7 @@ void drawBox(vector<vector<char>>& board, int x, int y, int boxSize, char shape)
     int new_x, new_y;
     int small_boxSize = boxSize/3;
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++){
             // 각각의 사각형을 재귀적으로 그림.
             // (ㅁ) ㅁ  ㅁ
             //  ㅁ  -   ㅁ
