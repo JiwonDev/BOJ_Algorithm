@@ -17,7 +17,6 @@ void recursion(vector<string> data, const int count, string prefix=""){
         cout << prefix + data.back();
         return;
     }
-
     for (int i = 0; i < data.size()-1; ++i)
         cout << prefix + data[i];
     recursion(data,count-1, prefix+"____");
